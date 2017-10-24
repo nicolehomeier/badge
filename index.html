@@ -10,17 +10,19 @@
     <link rel='stylesheet' type='text/css' href='a.css'>
   </head>
   <body>
-     <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Badge</a>
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Badge</a>
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <span class="navbar-toggler-icon"></span> -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Request Badges</a></li>
+          </ul>
         </div>
-        <ul class="nav navbar-nav">
-          <li><a href="#">About</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Request Badges</a></li>
-        </ul>
-      </div>
     </nav>
      <div class="container-fluid">
        <section id="intro">
@@ -30,6 +32,13 @@
               <h1>BADGE</h1>
               <p>Get more tips by leaving your Badge.</p>
               <a href="#" role="button">Try it now</a>
+                <form>
+                  <div class="form-group">
+                    <label for="InputEmail">Email address</label>
+                    <input type="email" class="form-control" id="ExampleInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else!</small>
+                  </div>
+                </form> 
             </div>
           </div>
         </div>
@@ -42,12 +51,12 @@
        <section id="feature-rundown"></section>
        <section id="faq"></section>
        <section id="footer"></section>
-       <ul>
+       <!-- <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">Blog</a></li>
-      </ul>
+      </ul> -->
 
      </div>
   </body>
