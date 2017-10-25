@@ -16,7 +16,7 @@
       <span class="navbar-toggler-icon"></span>
       </button>
       <span class="navbar-toggler-icon"></span> -->
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link" href="#">About</a></li>
             <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
@@ -32,13 +32,17 @@
               <h1>BADGE</h1>
               <p>Get more tips by leaving your Badge.</p>
               <a href="#" role="button">Try it now</a>
-                <form>
-                  <div class="form-group">
-                    <label for="InputEmail">Email address</label>
+                <form class="form-inline">
+                  <div class="form-group mx-sm-3">
+                    <label for="InputEmail"></label>
                     <input type="email" class="form-control" id="ExampleInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else!</small>
+                    
                   </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
                 </form> 
+                <div>
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else!</small>
+                </div>
             </div>
           </div>
         </div>
