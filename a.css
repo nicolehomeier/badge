@@ -1,8 +1,18 @@
 
-	#intro {
-  background: url('nik-lanus-41808.jpg') 0% 0%/cover 
+body{
+  font-family:sans-serif,Helvetica,Arial;
+  color: rgba(0,0,0,0.7);
 }
-	.fill-viewport {
+
+#intro {
+  background: url('assets/nik-lanus-41808.jpg') 0% 0%/cover 
+}
+
+.fill-viewport {
   	min-height: 100vh; 
 }
-	
+
+#info1{
+		background-color: #91855d;
+		text-color: rgb(0,0,0,40);
+	}
