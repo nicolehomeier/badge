@@ -7,16 +7,16 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link rel='stylesheet' type='text/css' href='a.css'>
+    <link rel='stylesheet' type='text/css' href='badge.css'>
   </head>
   <body>
      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand text-muted" href="#"><img src="assets/Badge_plainlogo.png" width=40px height=40px>ADGE</a>
+      <a class="navbar-brand text-muted" href="#"><img src="assets/Badge_plainlogo.png" width=40px height=40px alt="B">ADGE</a>
       <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
       </button>
       <span class="navbar-toggler-icon"></span> -->
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link" href="#">About</a></li>
             <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
@@ -28,42 +28,43 @@
        <section id="intro">
          <div class="container">
           <div class="row fill-viewport align-items-center">
-            <div class="col-12 col-md-6">
-              <h1>BADGE</h1>
-              <p>Get more tips by leaving your Badge.</p>
-              <a href="#" role="button">Try it now</a>
-                <form class="form-inline">
+            <div class="col-12">
+              <h1 class="badge-blue">Scan a Badge</h1>
+              <p>Enter the code found on your Badge below. You'll have a chance to confirm your unique Badge on the next screen.</p>
+                <form id="codeinput" class="form-inline">
                   <div class="form-group mx-sm-3">
-                    <label for="InputEmail"></label>
-                    <input type="email" class="form-control" id="ExampleInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
-                    
+                    <label for="InputBadgeCode"></label>
+                    <input type="number" minlength="4" maxlength="4" class="form-control"placeholder="Ex. 4356">
                   </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
                 </form> 
                 <div>
-                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else!</small>
+                  <small id="codeHelp" class="form-text">Must be a 4-digit number.</small>
                 </div>
             </div>
           </div>
         </div>
        </section>
        
-       <section id="info1" class="text-light">
-        <div class="container">
+       <section id="info1" class="text-dark">
+        <div class="container pt-3 pb-3">
           <div class="row">
-            <div class="col-12 col-md-6">
-              <h4 class="text-center">Some cool stuff.</h4>
-              <p class="text-center">With a badge no one needs to remember cash for tips.</p>
+            <div class="col-12 col-md-6 bd-right">
+              <h4 class="text-center lead">Cashless Tipping</h4>
+              <p class="text-center">Badge eliminates the need for cash when tipping. Through our secure payment system, you never have to use cash again!</p>
             </div>
             <div class="col-12 col-md-6">
-              <h4 class="text-center">Some more cool stuff.</h4>
-              <p class="text-center">I'll put more information here.</p>
+              <h4 class="text-center">Great Rewards</h4>
+              <p class="text-center"></p>
             </div>
           </div>
         </div>
       </section>
-       <section id="faq"></section>
-       <section id="footer"></section>
+       <section id="footer">
+         <div class="row">
+           
+         </div>
+       </section>
        <!-- <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>

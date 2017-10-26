@@ -1,0 +1,25 @@
+
+body{
+  color: rgba(0,0,0,0.7);
+}
+
+#intro {
+  background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,0)), 
+  	url('assets/nik-lanus-41808.jpg') 0% 0%/cover no-repeat
+}
+
+.fill-viewport {
+  	min-height: 85vh; 
+}
+
+#info1{
+		background-color: rgb(117,221,249);
+	}
+
+.badge-blue{
+	color: rgb(117,221,249);
+}
+
+.bd-right{
+	border-right: 1px solid;
+}
