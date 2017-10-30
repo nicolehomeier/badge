@@ -34,3 +34,11 @@ body{
 	border-color: rgb(117,221,249,.8);
 	border-right: 1px solid;
 }
+
+.icon-badgeblue{
+	color: rgb(117,221,249);
+}
+
+.icon-silver{
+	color: silver;
+}
