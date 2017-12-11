@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel='stylesheet' type='text/css' href='badge.css'>
+  </head>
+  <body>
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand text-muted" href="#"><img src="assets/Badge_plainlogo.png" width=40px height=40px alt="B">ADGE</a>
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <span class="navbar-toggler-icon"></span> -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <!-- <li class="nav-item"><a class="nav-link" href="#">Tip a Badge</a></li> -->
+            <li class="nav-item"><a class="nav-link" href="#how1">How it Works</a></li>
+            <li class="nav-item"><a class="nav-link" href="#request">Request Badges</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+    </nav>
+     <div class="container-fluid">
+       <section id="intro">
+         <div class="container">
+          <div class="row fill-viewport align-items-center">
+            <div class="col-12 col-md-6">
+              <h1 class="badge-blue">Tip with a Badge</h1>
+              <p>Enter the code on your Badge below. You'll confirm your unique Badge on the next screen.</p>
+                <form id="codeinput" class="form-inline">
+                  <div class="form-group mx-sm-3">
+                    <label for="InputBadgeCode"></label>
+                    <input type="number" minlength="4" maxlength="4" class="form-control"placeholder="Ex. 4356">
+                  </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                </form> 
+                <div>
+                  <small id="codeHelp" class="form-text">Must be a 4-digit number.</small>
+                </div>
+            </div>
+          </div>
+        </div>
+       </section>
+       
+       <section id="how1" class="text-dark">
+        <div class="jumbotron pt-4">
+          <div class="col-12 text-center pb-3">
+            <h2>How it Works</h2>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 text-center">
+              <h4 class="lead">You leave a Badge</h4>
+              <p><i class="fa fa-check-circle-o icon-badgeblue fa-2x"></i></p>
+              <p>Badge eliminates the need for cash when tipping. Through our secure payment system, you never have to use cash again!</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 text-center">
+              <h4 class="lead">Someone uses it</h4>
+              <p><i class="fa fa-magic icon-badgeblue fa-2x"></i></p>
+              <p>You left your Badge for someone, and they tipped you without cash.</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 text-center">
+              <h4 class="lead">Get an alert</h4>
+              <p><i class="fa fa-bell-o icon-badgeblue fa-2x"></i></p>
+              <p>When someone tips you you'll get a text alert with the tip amount and your current balance.</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 text-center">
+              <h4 class="lead">Get paid</h4>
+              <p><i class="fa fa-usd icon-badgeblue fa-2x"></i></p>
+              <p>When your balance reaches $100 we'll send your payment via check or paypal, you choose! You can also get paid from our monthly BadgeVan visits to hotels.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="how2">
+        <!-- <div class="container pt-3 pb-3"> -->
+          <div class="jumbotron">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 text-center">
+              <h4 class="lead">You get a Badge</h4>
+              <p><i class="fa fa-futbol-o icon-silver fa-2x"></i></p>
+              <p>You didn't have cash, or didn't have the right bills, but Badge has you covered! Take the Badge with you and visit badgepayments.com when it's conveient for you.</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 text-center">
+              <h4 class="lead">Enter the code</h4>
+              <p><i class="fa fa-bomb icon-silver fa-2x"></i></p>
+              <p>On our website you'll enter the code found on the back of the Badge. Each Badge is unique. Visually confirm the identify of your Badge to tip the right service professional.</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 text-center">
+              <h4 class="lead">Confirm your Badge</h4>
+              <p><i class="fa fa-bomb icon-silver fa-2x"></i></p>
+              <p>An image of the unique Badge will come up. Confirm it's your Badge to move to the next step and select your tip.</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 text-center">
+              <h4 class="lead">Select your tip</h4>
+              <p><i class="fa fa-usd icon-silver fa-2x"></i></p>
+              <p>Select a tip, with a minimum amount of $2, and a maximum of $100. Enter your credit card information in our secure payment system powered by Stripe. Congratulations! You've just sent a tip without cash.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+       <section id="request">
+         <div class="container">
+          <div class="row fill-viewport align-items-center text-light">
+            <div class="col-12 col-md-6">
+              <h1>Request Badges</h1>
+              <p></p>
+                <form class="form-inline" method="post" action="">
+                  <div class="form-group mx-sm-3">
+                    <label for="RequestBadges"></label>
+                    <input type="email" class="form-control"placeholder="email@email.com">
+                  </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                </form> 
+                <div>
+                  <medium id="requestHelp" class="form-text">We never share your contact information with anyone else! When you submit your email address we will contact you within 48 hours. We'll need a physical address where we can ship the badges.</medium>
+                </div>
+            </div>
+          </div>
+        </div>
+       </section>
+        <div class="footer">
+         <ul>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="mailto:info@badgepayments.com">Contact</a></li>
+          <!-- <li><a href="#">Blog</a></li> -->
+        </ul>
+      </div>
+
+     </div>
+  </body>
+</html>
