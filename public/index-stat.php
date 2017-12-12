@@ -1,43 +1,4 @@
-<?php 
-if (isset($_POST['submit']))
-{
-  require "config.php";
-  /** require "../common.php"; */
-
-  try
-  {
-   $connection = new PDO($dsn, $username, $password, $options);
-
-    $new_transaction = array(
-    "badgecode" => $_POST['badgecode'],
-    "tipamt" => $_POST['tipamt']
-    ); 
-    
-    $sql = sprintf(
-      "INSERT INTO %s (%s) values (%s)",
-      "tiptransactions",
-      implode(", ", array_keys($new_transaction)),
-      ":" . implode(", :", array_keys($new_transaction))
-    );
-
-    $statement = $connection->prepare($sql); 
-    $statement->execute($new_transaction); 
-  }
-  catch(PDOException $error)
-  {
-    echo $sql . "<br>" . $error->getMessage();
-  } 
-} 
-?>
-
 <?php include "templates/header.php";?>
-
-<?php 
-if (isset($_POST['submit']) && $statement)
-{ ?>
-    <blockquote><?php echo $_POST['tipamt']; ?>  successfully tipped to <?php echo $_POST['badgecode']; ?></blockquote>
-    <?php
-} ?>
      <div class="container-fluid">
        <section id="intro">
          <div class="container">
@@ -138,6 +99,4 @@ if (isset($_POST['submit']) && $statement)
           </div>
         </div>
        </section>
-
-       <a href="index.php">Back to Home</a>
 <?php include "templates/footer.php"; ?>
