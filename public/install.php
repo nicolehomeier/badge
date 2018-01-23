@@ -4,7 +4,7 @@
 
 	try
 	{
-		$connection = new PDO("mysql:host=$host",$username, $password, $options);
+		$connection = new PDO("mysql:host=$host;port=8889;",$username, $password, $options);
 		$sql = file_get_contents("data/init.sql");
 		$connection->exec($sql);
 
