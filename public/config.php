@@ -6,6 +6,6 @@ $host		= "127.0.0.1";
 $username	= "root";
 $password	= "root";
 $dbname		= "test";
-$dsn		= "mysql:host=$host;dbname=$dbname";
+$dsn		= "mysql:host=$host;port=8889;dbname=$dbname";
 $options	= array( 
 				PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
