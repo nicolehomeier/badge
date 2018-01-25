@@ -13,15 +13,17 @@ if (isset($_POST['submit']))
     "tipamt" => $_POST['tipamt']
     ); 
     
+ //   $sql = "INSERT INTO tiptransactions (badgecode, tipamt) VALUES ($_POST['badgecode'],$_POST['tipamt'])";
+
     $sql = sprintf(
-      "INSERT INTO %s (%s) values (%s)",
+     "INSERT INTO %s (%s) values (%s)",
       "tiptransactions",
-      implode(", ", array_keys($new_transaction)),
-      ":" . implode(", :", array_keys($new_transaction))
+      implode(", ", array_keys($new_transaction)),":" . implode(", :", array_keys($new_transaction))
     );
 
     $statement = $connection->prepare($sql); 
     $statement->execute($new_transaction); 
+    echo $sql;
   }
   catch(PDOException $error)
   {
